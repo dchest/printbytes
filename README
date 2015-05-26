@@ -1,8 +1,9 @@
-Command printrandombytes prints random bytes for use in Go programs.
+Command printbytes reads bytes from standard input and prints them in Go source
+format.
 
 Example
 
-  $ printrandombytes -c 16
+  $ head -c16 /dev/urandom | printbytes
   []byte{
   	0x50, 0x5b, 0x6a, 0x75, 0x1c, 0xa9, 0x3e, 0x33, 0x45, 0x49, 
 	0x21, 0x6f, 0x65, 0x49, 0x48, 0x90,
